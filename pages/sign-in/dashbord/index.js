@@ -11,7 +11,7 @@ const createNotes = (array) => {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    const innertext = `<div class="card-header"> <div class="card-heading"> ${heading}</div> <div class="edit-note"> <img src="https://img.icons8.com/material-outlined/35/ffffff/edit-image.png" alt="Edit it"/> </div> </div> <div class="card-content"> <div class="content">${content} </div></div>`;
+    const innertext = `<div class="card-header"> <div class="card-heading"> ${heading}</div> <div class="edit-note"> <a href="./upadte note/index.html"><img src="https://img.icons8.com/material-outlined/35/ffffff/edit-image.png"/></a> </div> </div> <div class="card-content"> <div class="content">${content} </div></div>`;
     card.innerHTML = innertext;
     container.appendChild(card);
   });
