@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  min-height: 80vh;
+  width: 100%;
+  background: linear-gradient(
+      230.74deg,
+      rgba(3, 3, 3, 0.4) 6.36%,
+      rgba(0, 128, 0, 0) 72.49%
+    ),
+    #fabc73;
+  overflow-x: hidden;
+  padding: 15px 15px;
+}
+
+/* ------ Navigation ------ */
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0, 20px;
+}
+.Welcome-user {
+  font-size: 40px;
+  margin-left: 2rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Stylish", sans-serif;
+}
+.user-dasboard {
+  color: #cb2700;
+  font-family: "Stylish", sans-serif;
+}
+.create-note,
+.log-out {
+  height: 5vh;
+  margin-right: 40px;
+  width: 8rem;
+  background: rgba(255, 255, 255, 0.582);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 200;
+}
+.log-out {
+  width: 6rem;
+}
+/*  -----------Main card making--------- */
+.card-container {
+  width: 100%;
+  min-height: 90vh;
+  margin-left: 2rem;
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  margin-right: 1.6rem;
+  max-width: 270px;
+  min-height: 180px;
+  background: rgba(255, 255, 255, 0.582);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.card-heading {
+  color: #18a0df;
+  font-family: "Stylish", sans-serif;
+  font-size: 32px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  width: 240px;
+  padding: 8px 8px;
+  font-size: 20px;
+}
+.edit-note {
+  position: relative;
+  color: #18a0df;
+  margin-top: 0;
+  float: right;
+  cursor: pointer;
+}
+.card-content {
+  min-height: 255px;
+  margin: 5px 10px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.content {
+  color: #18a0df;
+}

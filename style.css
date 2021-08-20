@@ -1,15 +1,29 @@
+/*
+yellow #FFFF00 ;
+purple 446DB9;
+green 2CA512;
+red CB2700;
+black 050100;
+
+ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: white;
+  /* color: white; */
 }
 
 body {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(45deg, #ff9ce3, #4ab3ff);
+  background: linear-gradient(
+      230.74deg,
+      rgba(3, 3, 3, 0.4) 6.36%,
+      rgba(0, 128, 0, 0) 72.49%
+    ),
+    #fabc73;
+
   overflow: hidden;
   opacity: 0;
   transition: opacity 1s ease;
@@ -24,16 +38,20 @@ nav {
   justify-content: flex-end;
   align-items: center;
   padding: 0 80px;
+  text-decoration: none;
 }
 .sign-in-sign-up {
-  background: rgba(255, 255, 255, 0.3);
+  background: #5d87d442;
   padding: 5px;
   border-radius: 15px;
-  border: 1px solid #fff;
-  backdrop-filter: blur(6px);
+  border: 2px solid #fabc73;
+  backdrop-filter: blur(12px);
   cursor: pointer;
+  text-decoration: none;
+  z-index: 2;
 }
 
+/* -------body------------- */
 main {
   height: 90vh;
   width: 100%;
@@ -42,52 +60,33 @@ main {
   padding: 0 80px;
   justify-content: space-between;
 }
-main > div {
-  width: 50%;
+.image-home {
+  position: relative;
+  width: 271px;
+  height: 210px;
+  background: url(1.png);
+  mix-blend-mode: multiply;
 }
-.leftside {
-  transform: translateY(-100%);
+.up-span {
+  color: #cb2700;
+  font-family: "Stylish", sans-serif;
 }
 .heading {
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 2px;
+  font-family: "Stylish", sans-serif;
 }
 .sub-heading {
   font-size: 25px;
   font-weight: 300;
   letter-spacing: 3px;
 }
+.left-side {
+  width: 30%;
+}
 .right-side {
-  /* background: burlywood; */
-  display: flex;
-  justify-content: flex-end;
-}
-.illustration-home {
-  width: 80%;
-}
-.circle1,
-.circle2 {
-  z-index: -5;
-}
-.circle1 {
-  background: linear-gradient(225deg, #0994ff, #97ff57);
-  filter: blur(10px);
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  position: absolute;
-  left: -130px;
-  top: 0px;
-}
-.circle2 {
-  background: linear-gradient(180deg, #ff57d0, #0094ff);
-  filter: blur(5px);
-  width: 300px;
-  height: 300px;
-  right: -30px;
-  bottom: -80px;
-  position: absolute;
-
-  border-radius: 50%;
+  margin-left: 0;
+  width: 70%;
+  justify-content: space-between;
 }
