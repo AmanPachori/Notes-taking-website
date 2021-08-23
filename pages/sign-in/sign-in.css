@@ -49,7 +49,9 @@ main > div {
   font-family: "Stylish", sans-serif;
 }
 #email,
+#email-signup,
 #password,
+#password-signup,
 #entername,
 #re-password {
   height: 1.78rem;

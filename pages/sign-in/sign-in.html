@@ -18,26 +18,55 @@
   <body>
     <main class="main">
       <div class="left-form">
-        <form class="form" id="form">
+        <form class="form-signIn" id="form">
           <h1 class="sign">Sign <span class="sign-up">In</span></h1>
-          <input id="email" type="text" value="email" /><br />
-          <input id="password" type="text" value="password" /><br />
-          <button class="sign-in-sign-up" id="sign-in">Sign In</button>
+          <input class="email" id="email" type="text" value="email" /><br />
+          <input
+            class="password"
+            id="password"
+            type="text"
+            value="password"
+          /><br />
+          <button type="submit" class="sign-in-sign-up" id="sign-in">
+            Sign In
+          </button>
         </form>
       </div>
       <div class="right-form">
-        <form class="form" id="form">
+        <form class="form-signup" id="form-singup">
           <h1 class="sign">Sign <span class="sign-up">Up</span></h1>
-          <input id="email" type="text" value="enter-email" /><br />
-          <input id="entername" type="text" value="enter-name" />
+          <input
+            class="email-signup"
+            id="email-signup"
+            type="text"
+            value="enter-email"
+          /><br />
+          <input
+            class="entername"
+            id="entername"
+            type="text"
+            value="enter-name"
+          />
           <br />
-          <input id="password" type="text" value="enter-password" /> <br />
-          <input id="re-password" type="text" value="renter-password" /><br />
-          <div class="sign-in-sign-up" id="sign-up">
-            <a href="dashbord/dashboard .html"> Sign-Up</a>
-          </div>
+          <input
+            class="password-signup"
+            id="password-signup"
+            type="password"
+            value="enter-password"
+          />
+          <br />
+          <input
+            class="repassword"
+            id="re-password"
+            type="password"
+            value="renter-password"
+          /><br />
+          <button class="sign-in-sign-up" type="submit" id="sign-up">
+            Sign-Up
+          </button>
         </form>
       </div>
     </main>
+    <script src="index.js" defer></script>
   </body>
 </html>
