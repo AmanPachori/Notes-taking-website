@@ -30,7 +30,7 @@ signup.addEventListener("submit", () => {
 
       if (token) {
         localStorage.setItem("jwt", token);
-        location.href = "/pages/dashboard/dashboard.html";
+        location.href = "/pages/dashbord/dashboard .html";
       } else {
         alert("SignUp Again");
       }
@@ -61,7 +61,7 @@ signin.addEventListener("submit", () => {
 
       if (token) {
         localStorage.setItem("jwt", token);
-        location.href = "/pages/dashbord/dashboard.html";
+        location.href = "/pages/dashbord/dashboard .html";
       } else {
         alert("SignIn Again");
       }
