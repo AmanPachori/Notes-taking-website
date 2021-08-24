@@ -27,7 +27,7 @@ body {
   padding: 20px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.4);
-  border: 1px solid white;
+  border: 2px solid white;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   display: flex;
@@ -52,7 +52,7 @@ body {
   height: 50%;
   width: 90%;
   border-radius: 15px;
-  color: white;
+  color: black;
   padding: 10px;
   text-align: center;
 }
@@ -62,7 +62,7 @@ body {
   height: 10%;
   width: 90%;
   border-radius: 15px;
-  color: white;
+  color: rgb(5, 5, 5);
   padding: 10px;
   text-align: center;
 }

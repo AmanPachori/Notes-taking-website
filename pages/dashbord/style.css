@@ -60,6 +60,7 @@ nav {
 .card-container {
   width: 100%;
   min-height: 90vh;
+  margin-top: 2rem;
   margin-left: 2rem;
   display: flex;
   padding-left: 10px;
@@ -79,7 +80,7 @@ nav {
 .card-heading {
   color: #18a0df;
   font-family: "Stylish", sans-serif;
-  font-size: 32px;
+  font-size: 20px;
 }
 .card-header {
   display: flex;
@@ -104,5 +105,6 @@ nav {
   border: 2px solid white;
 }
 .content {
-  color: #18a0df;
+  color: black;
+  margin-top: 1.5rem;
 }
