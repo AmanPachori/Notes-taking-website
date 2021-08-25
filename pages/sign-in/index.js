@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const url = "http://localhost:5000";
+const url = "https://note-up.herokuapp.com";
 
 const signup = document.querySelector(".form-signup");
 
@@ -10,7 +10,6 @@ signup.addEventListener("submit", () => {
   const name = document.querySelector(".entername").value;
   const password = document.querySelector(".password-signup").value;
   const repassword = document.querySelector(".repassword").value;
-  console.log(email, name, password, repassword);
 
   if (password !== repassword) {
     window.alert("password does not match");
@@ -30,7 +29,7 @@ signup.addEventListener("submit", () => {
 
       if (token) {
         localStorage.setItem("jwt", token);
-        location.href = "/pages/dashbord/dashboard .html";
+        location.href = "../dashbord/dashboard .html";
       } else {
         alert("SignUp Again");
       }
@@ -61,7 +60,7 @@ signin.addEventListener("submit", () => {
 
       if (token) {
         localStorage.setItem("jwt", token);
-        location.href = "/pages/dashbord/dashboard .html";
+        location.href = "../dashbord/dashboard .html";
       } else {
         alert("SignIn Again");
       }

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  text-decoration: none;
 }
 
 body {
@@ -55,6 +56,7 @@ nav {
 }
 .log-out {
   width: 6rem;
+  text-decoration: none;
 }
 /*  -----------Main card making--------- */
 .card-container {
@@ -78,6 +80,7 @@ nav {
   border: 3px solid white;
 }
 .card-heading {
+  margin: 0px 13px;
   color: #18a0df;
   font-family: "Stylish", sans-serif;
   font-size: 20px;

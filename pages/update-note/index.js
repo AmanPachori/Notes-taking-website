@@ -5,7 +5,7 @@ console.log(noteId);
 
 const updateButton = document.querySelector(".create-note-button");
 
-const url = "http://localhost:5000";
+const url = "https://note-up.herokuapp.com";
 const token = localStorage.getItem("jwt");
 
 updateButton.addEventListener("click", () => {
@@ -25,7 +25,7 @@ updateButton.addEventListener("click", () => {
       .then((data) => {
         if (data.message) {
           console.log(data.message);
-          location.href = "/pages/dashbord/dashboard .html";
+          location.href = "../dashbord/dashboard .html";
         }
       })
       .catch((err) => {

@@ -1,8 +1,7 @@
 const logout = document.querySelector(".log-out");
-const url = "http://localhost:5000";
+const url = "https://note-up.herokuapp.com";
 logout.addEventListener("click", () => {
   localStorage.setItem("jwt", "");
-  location.href = "/";
 });
 
 const token = localStorage.getItem("jwt");
@@ -49,5 +48,5 @@ window.addEventListener("load", () => {
 const createnote = document.querySelector(".create-note");
 
 createnote.addEventListener("click", () => {
-  location.href = "/pages/create note/index.html";
+  location.href = "../create note/index.html";
 });
